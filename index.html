@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brilhantes Joias - Sofisticação e Elegância</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#inicio">Brilhantes Joias</a>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menu" id="menuToggle">&#9776;</button>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#colecoes">Coleções</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section id="inicio" class="page-section">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Onde a Elegância Encontra o Eterno</h1>
+                    <p>Descubra o brilho que define o seu momento.</p>
+                </div>
+            </div>
+            <h2>Destaques da Semana</h2>
+            <p style="text-align: center;">Uma breve apresentação das nossas peças mais vendidas e exclusivas.</p>
+        </section>
+
+        <section id="colecoes" class="page-section">
+            <h2>Nossas Coleções</h2>
+            <p>Explore nossas linhas exclusivas: 'Elegância Clássica', 'Modernidade Minimalista' e 'Diamantes de Noivado'.</p>
+            <div class="colecoes-grid">
+                <div>Coleção Clássica</div>
+                <div>Coleção Minimalista</div>
+                <div>Coleção Noivado</div>
+            </div>
+        </section>
+
+        <section id="sobre" class="page-section">
+            <h2>Sobre Nós</h2>
+            <p>A "Brilhantes Joias" nasceu da paixão por transformar metais e pedras preciosas em arte vestível. Desde 1995, dedicamo-nos à excelência, garantindo a qualidade e a procedência de cada gema.</p>
+            <p>Nossa missão é celebrar momentos especiais com peças que duram uma vida inteira.</p>
+        </section>
+
+        <section id="contato" class="page-section">
+            <h2>Entre em Contato</h2>
+            <p>Fale conosco para agendar uma visita ou tirar dúvidas.</p>
+            <form id="contact-form">
+                <p><label for="nome">Nome:</label><input type="text" id="nome" name="nome" required></p>
+                <p><label for="email">E-mail:</label><input type="email" id="email" name="email" required></p>
+                <p><label for="mensagem">Mensagem:</label><textarea id="mensagem" name="mensagem" rows="5" required></textarea></p>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Brilhantes Joias. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
