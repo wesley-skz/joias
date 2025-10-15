@@ -1,0 +1,318 @@
+/* Importação de fonte elegante para o tema */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap');
+
+:root {
+    --primary-color: #A68A64; /* Dourado/Bronze suave */
+    --secondary-color: #333333; /* Texto escuro */
+    --background-color: #F8F4F0; /* Fundo Creme Suave */
+    --accent-color: #6C5B4A; /* Detalhes */
+    --error-color: #CC0000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* --- Estilos Comuns de Layout --- */
+header {
+    background-color: white;
+    padding: 20px 50px;
+    border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    font-size: 2em;
+    font-weight: 700;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 400;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+nav a:hover, nav a.active {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 3px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--accent-color);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* --- Estilos ESPECÍFICOS: Página de Contato --- */
+.container.contato-layout {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 15px;
+    font-size: 1.05em;
+}
+
+.contact-info strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 3px;
+}
+
+.contact-form-section {
+    flex: 2;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(166, 138, 100, 0.5);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block;
+}
+
+#submitButton {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+#submitButton:hover {
+    background-color: var(--accent-color);
+}
+
+.status-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+.status-message.success {
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+}
+
+/* --- Estilos ESPECÍFICOS: Página Sobre Nós --- */
+
+.hero-section {
+    background-color: #EDE8E3;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+.hero-section p {
+    font-size: 1.1em;
+    color: var(--secondary-color);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.story-section {
+    padding: 40px 0;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.story-text {
+    flex: 2;
+}
+
+.story-image {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.story-image:hover img {
+    transform: scale(1.05);
+}
+
+.values-section {
+    padding: 40px 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.value-card {
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.value-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.25em;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-color);
+}
+
+
+/* --- Responsividade Geral --- */
+@media (max-width: 850px) {
+    .container.contato-layout {
+        flex-direction: column;
+    }
+
+    .story-section {
+        flex-direction: column;
+    }
+    
+    .story-image {
+        order: -1; 
+        margin-bottom: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+}
