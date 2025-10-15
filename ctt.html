@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - [Nome da Joalheria]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>[Nome da Joalheria]</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Coleções</a>
+            <a href="#">Sobre</a>
+            <a href="#" class="active">Contato</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="contact-info">
+            <h2>Fale Conosco</h2>
+            <p>Seja para tirar dúvidas sobre uma peça, agendar uma visita ou discutir uma criação personalizada, nossa equipe está pronta para atendê-lo(a) com a discrição e atenção que você merece.</p>
+            <ul>
+                <li><strong>Telefone:</strong> (XX) XXXX-XXXX</li>
+                <li><strong>E-mail:</strong> contato@joalheria.com</li>
+                <li><strong>Endereço:</strong> Rua da Elegância, 123, Bairro Nobre - Cidade/UF</li>
+                <li><strong>Horário:</strong> Seg. a Sex. das 10h às 18h</li>
+            </ul>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Envie-nos uma Mensagem</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required aria-label="Seu nome completo">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required aria-label="Seu e-mail de contato">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto:</label>
+                    <select id="subject" name="subject" required aria-label="Assunto da mensagem">
+                        <option value="">Selecione um Assunto</option>
+                        <option value="duvidas">Dúvidas sobre Peças</option>
+                        <option value="personalizado">Criação Personalizada</option>
+                        <option value="agendamento">Agendamento de Visita</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                    <span class="error-message" id="subject-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required aria-label="Sua mensagem"></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                <button type="submit" id="submitButton">Enviar Mensagem</button>
+                <p id="form-status" class="status-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [Nome da Joalheria]. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
